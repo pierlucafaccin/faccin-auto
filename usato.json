@@ -1,0 +1,65 @@
+{
+  "_istruzioni": "Ogni auto è un blocco tra graffe. Campi: id (unico, senza spazi), marca, modello, versione, anno, km, alimentazione, cambio, potenza, colore, porte, descrizione, foto (percorsi in img/usato/), stato (disponibile | riservata | venduta). Le auto con \"venduta\" non vengono mostrate. Cancella i 3 esempi (esempio: true) prima di andare online.",
+  "auto": [
+    {
+      "id": "esempio-swift",
+      "marca": "Suzuki",
+      "modello": "Swift",
+      "versione": "1.2 Hybrid (esempio)",
+      "anno": 2020,
+      "km": 45000,
+      "alimentazione": "Ibrida",
+      "cambio": "Manuale",
+      "potenza": "83 CV",
+      "colore": "Grigio",
+      "porte": 5,
+      "descrizione": "Scheda di esempio: sostituiscila in usato.json con un’auto che hai davvero in salone.",
+      "stato": "disponibile",
+      "esempio": true,
+      "foto": [
+        "img/usato/esempio-swift-1.webp",
+        "img/usato/esempio-swift-2.webp"
+      ]
+    },
+    {
+      "id": "esempio-vitara",
+      "marca": "Suzuki",
+      "modello": "Vitara",
+      "versione": "1.4 Hybrid 4WD AllGrip (esempio)",
+      "anno": 2021,
+      "km": 38000,
+      "alimentazione": "Ibrida",
+      "cambio": "Manuale",
+      "potenza": "129 CV",
+      "colore": "Grigio",
+      "porte": 5,
+      "descrizione": "Scheda di esempio con più foto: tocca le miniature o scorri con il dito.",
+      "stato": "riservata",
+      "esempio": true,
+      "foto": [
+        "img/usato/esempio-vitara-1.webp",
+        "img/usato/esempio-vitara-2.webp"
+      ]
+    },
+    {
+      "id": "esempio-jimny",
+      "marca": "Suzuki",
+      "modello": "Jimny",
+      "versione": "1.5 4WD (esempio)",
+      "anno": 2019,
+      "km": 52000,
+      "alimentazione": "Benzina",
+      "cambio": "Manuale",
+      "potenza": "102 CV",
+      "colore": "Giallo",
+      "porte": 3,
+      "descrizione": "Scheda di esempio: i filtri in alto compaiono quando ci sono alimentazioni diverse.",
+      "stato": "disponibile",
+      "esempio": true,
+      "foto": [
+        "img/usato/esempio-jimny-1.webp",
+        "img/usato/esempio-jimny-2.webp"
+      ]
+    }
+  ]
+}
