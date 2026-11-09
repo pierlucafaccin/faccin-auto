@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faccin Auto di Massimo Faccin · Concessionario Suzuki a Cornedo Vicentino (VI)</title>
+<meta name="description" content="Faccin Auto di Massimo Faccin: concessionario Suzuki a Cornedo Vicentino dal 1988. Auto nuove e usate, permute, finanziamenti e pratiche auto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --paper:#f2f4f7; --ink:#13233a; --text:#3a4658; --muted:#667386; --line:#dde2e9;
+  --red:#c8202f; --red-ink:#ffffff; --navy:#13233a; --sky1:#dbe6f2; --sky2:#f6efe4; --hill1:#9fb7a3; --hill2:#7b9a83; --hill3:#5e7f69;
+  --road:#4b5563; --glass:#cfdceb;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1622; --paper:#152030; --ink:#eef2f7; --text:#c4cdd8; --muted:#94a1b2; --line:#26344a;
+    --red:#e63946; --navy:#0a111b; --sky1:#1c2b40; --sky2:#2a2a3a; --hill1:#2f4a3a; --hill2:#263f31; --hill3:#1d3226;
+    --road:#2d3644; --glass:#2b3d55;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1622; --paper:#152030; --ink:#eef2f7; --text:#c4cdd8; --muted:#94a1b2; --line:#26344a;
+  --red:#e63946; --navy:#0a111b; --sky1:#1c2b40; --sky2:#2a2a3a; --hill1:#2f4a3a; --hill2:#263f31; --hill3:#1d3226;
+  --road:#2d3644; --glass:#2b3d55;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;color:var(--ink);font-weight:700;letter-spacing:.005em;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--red);color:var(--red-ink);padding:8px 14px;z-index:20}
+.skip:focus{left:8px}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:28px;height:76px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.brand b{font:700 28px/1 "Barlow Condensed","Arial Narrow",sans-serif;color:var(--ink);letter-spacing:.02em}
+.brand b span{color:var(--red)}
+.brand small{font-size:13px;color:var(--muted);margin-top:4px}
+nav.main{margin-left:auto}
+nav.main ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav.main a{display:block;padding:8px 12px;text-decoration:none;font-weight:500;color:var(--ink);border-radius:3px}
+nav.main a:hover{background:var(--paper)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px/1 "Barlow",sans-serif;text-decoration:none;padding:13px 20px;border-radius:3px;border:2px solid transparent;cursor:pointer}
+.btn-red{background:var(--red);color:var(--red-ink)}
+.btn-red:hover{filter:brightness(1.08)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--bg)}
+.btn svg{width:18px;height:18px}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--ink);padding:9px 12px;border-radius:3px;font:500 15px "Barlow",sans-serif}
+
+/* hero */
+.hero{padding:56px 0 80px;background:var(--bg);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:center}
+.place{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-weight:500;margin:0 0 10px}
+.place svg{width:16px;height:16px;color:var(--red)}
+.hero h1{font-size:clamp(48px,7vw,84px);line-height:.95;margin:0 0 22px}
+.hero h1 small{display:block;font-size:.38em;color:var(--muted);font-weight:600;margin-top:10px;letter-spacing:.01em}
+.lead{max-width:46ch;margin:0 0 28px}
+.lead strong{display:block;color:var(--ink);font-size:20px;margin-bottom:6px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.slides{position:relative;aspect-ratio:4/3;border-radius:4px;overflow:hidden;background:var(--sky1);box-shadow:0 1px 0 var(--line)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.on{opacity:1}
+.slide svg{width:100%;height:100%}
+.pause{position:absolute;right:12px;bottom:12px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:6px 10px;font:500 14px "Barlow",sans-serif;cursor:pointer;opacity:.92}
+.dots{position:absolute;left:14px;bottom:16px;display:flex;gap:6px}
+.dots i{width:22px;height:3px;background:rgba(255,255,255,.55);border-radius:2px}
+.dots i.on{background:var(--red)}
+
+/* sections */
+section.s{padding:88px 0}
+section.alt{background:var(--paper)}
+.kicker{color:var(--red);font-weight:600;margin:0 0 6px}
+.s h2{font-size:clamp(34px,4.4vw,48px);line-height:1.02;margin:0 0 36px;max-width:22ch}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;list-style:none;margin:0;padding:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.services li{padding:30px 28px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg)}
+.services svg{width:44px;height:44px;color:var(--red);margin-bottom:16px}
+.services h3{font-size:25px;margin:0 0 8px}
+.services p{margin:0;color:var(--text)}
+
+.head-row{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.head-row h2{margin:0}
+.models{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;list-style:none;margin:0;padding:0}
+.model{background:var(--bg);border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.model .pic{aspect-ratio:16/10;background:var(--sky1);display:flex;align-items:flex-end;padding:0 10px 10px}
+.model .body{padding:18px 20px 22px}
+.model .cat{display:inline-block;font-size:14px;font-weight:600;color:var(--red);margin-bottom:4px}
+.model h3{font-size:28px;margin:0 0 6px}
+.model p{margin:0;font-size:16px}
+.note{color:var(--muted);font-size:15px;margin:22px 0 0}
+
+.about{display:grid;grid-template-columns:6fr 5fr;gap:56px;align-items:center}
+.about .pic{border-radius:4px;overflow:hidden;aspect-ratio:5/4;background:var(--sky1)}
+.about p{max-width:56ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:28px 0 0;border-top:2px solid var(--ink)}
+.facts div{padding:14px 14px 0 0}
+.facts dt{font:700 30px/1 "Barlow Condensed",sans-serif;color:var(--ink)}
+.facts dd{margin:4px 0 0;color:var(--muted);font-size:15px}
+.person{display:flex;align-items:center;gap:16px;margin-top:30px}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:700 24px "Barlow Condensed",sans-serif}
+.person b{display:block;color:var(--ink);font-size:19px}
+.person span{color:var(--muted)}
+
+.cta{background:var(--navy);color:#fff;padding:64px 0}
+.cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.cta h2{color:#fff;font-size:clamp(30px,3.6vw,42px);max-width:24ch;margin:0}
+.cta .btn-line{border-color:#fff;color:#fff}
+.cta .btn-line:hover{background:#fff;color:#13233a}
+
+footer{padding:64px 0 40px;border-top:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:2fr 1.3fr 1.3fr 1fr;gap:40px}
+footer h3{font-size:22px;margin:0 0 10px}
+footer p,footer ul{margin:0;padding:0;list-style:none;color:var(--text)}
+footer li{margin:0 0 4px}
+footer a{text-underline-offset:3px}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);margin-top:48px;padding-top:20px;color:var(--muted);font-size:15px}
+
+@media (max-width:980px){
+  .hero-grid,.about{grid-template-columns:1fr;gap:40px}
+  .services{grid-template-columns:1fr 1fr}
+  .models{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .hero{background:var(--bg)}
+}
+@media (max-width:760px){
+  .menu-btn{display:block}
+  .bar .btn-red{display:none}
+  nav.main{position:absolute;left:0;right:0;top:76px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;padding:8px 16px 16px}
+  nav.main a{padding:12px 8px;font-size:18px}
+  .services,.models{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr 1fr}
+  .fgrid{grid-template-columns:1fr}
+  section.s{padding:64px 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto principale</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="hatch" viewBox="0 0 300 120">
+      <path fill="currentColor" d="M18 88 20 64q4-9 20-12l46-5q16-19 40-23l68-2q22 0 36 18l32 12q18 5 20 17v19z"/>
+      <path fill="var(--glass)" d="M97 46q12-14 30-16l32-1v17zM167 29h26q15 1 27 17h-53z"/>
+      <circle cx="74" cy="90" r="17" fill="#1b2230"/><circle cx="74" cy="90" r="7" fill="#9aa4b2"/>
+      <circle cx="230" cy="90" r="17" fill="#1b2230"/><circle cx="230" cy="90" r="7" fill="#9aa4b2"/>
+      <rect x="262" y="62" width="14" height="5" rx="2" fill="#f4d58d"/>
+    </symbol>
+    <symbol id="suv" viewBox="0 0 300 120">
+      <path fill="currentColor" d="M16 92V62q2-10 18-12l36-4q16-24 40-28l106-2q17 0 29 18l24 12q16 4 16 18v28z"/>
+      <path fill="var(--glass)" d="M82 46q12-20 32-22l38-1v23zM160 23h52q14 1 24 23h-76z"/>
+      <rect x="110" y="10" width="110" height="5" rx="2" fill="currentColor"/>
+      <circle cx="72" cy="94" r="19" fill="#1b2230"/><circle cx="72" cy="94" r="8" fill="#9aa4b2"/>
+      <circle cx="234" cy="94" r="19" fill="#1b2230"/><circle cx="234" cy="94" r="8" fill="#9aa4b2"/>
+      <rect x="266" y="60" width="14" height="6" rx="2" fill="#f4d58d"/>
+    </symbol>
+    <symbol id="cross" viewBox="0 0 300 120">
+      <path fill="currentColor" d="M16 90V64q3-10 20-13l44-5q16-20 40-24l92-2q19 0 32 18l26 11q16 5 16 18v23z"/>
+      <path fill="var(--glass)" d="M92 46q12-16 32-18l34-1v19zM166 27h40q15 1 26 19h-66z"/>
+      <circle cx="74" cy="92" r="18" fill="#1b2230"/><circle cx="74" cy="92" r="7.5" fill="#9aa4b2"/>
+      <circle cx="234" cy="92" r="18" fill="#1b2230"/><circle cx="234" cy="92" r="7.5" fill="#9aa4b2"/>
+      <rect x="264" y="62" width="14" height="5" rx="2" fill="#f4d58d"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v10h15V7z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Faccin Auto, torna all’inizio">
+      <b>FACCIN<span>·</span>AUTO</b>
+      <small>di Massimo Faccin</small>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Principale">
+      <ul>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#modelli">Modelli</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-red" href="tel:+393405759574"><svg><use href="#phone"/></svg>340 575 9574</a>
+  </div>
+</header>
+
+<main id="contenuto">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="place"><svg><use href="#pin"/></svg>Cornedo Vicentino (VI)</p>
+        <h1>Faccin Auto<small>Concessionario Suzuki</small></h1>
+        <div class="lead">
+          <strong>Dal 1988, una persona sola che ti segue.</strong>
+          Scegli l’auto con chi te la consegnerà e ti risponderà al telefono anche dopo. Auto nuove Suzuki, usato, permute e pratiche: tutto in via Monte Ortigara, a due passi da Valdagno.
+        </div>
+        <div class="ctas">
+          <a class="btn btn-red" href="#servizi">Scopri i servizi</a>
+          <a class="btn btn-line" href="#contatti">Contattaci</a>
+        </div>
+      </div>
+
+      <div class="slides" id="slides" aria-roledescription="carosello" aria-label="Immagini del concessionario">
+        <!-- 1: strada in valle -->
+        <div class="slide on" aria-hidden="false">
+          <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Un’auto compatta su una strada tra le colline vicentine">
+            <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--sky1)"/><stop offset="1" stop-color="var(--sky2)"/></linearGradient></defs>
+            <rect width="640" height="480" fill="url(#sky)"/>
+            <circle cx="470" cy="140" r="46" fill="#f2c46d" opacity=".75"/>
+            <path d="M0 250 90 190 170 230 260 160 360 220 440 175 540 225 640 185V480H0z" fill="var(--hill1)"/>
+            <path d="M0 300 120 245 230 285 330 240 450 290 560 250 640 275V480H0z" fill="var(--hill2)"/>
+            <path d="M0 350 160 310 300 345 460 305 640 340V480H0z" fill="var(--hill3)"/>
+            <g fill="var(--hill3)" opacity=".9"><path d="M120 300l10-30 10 30z"/><path d="M138 305l9-26 9 26z"/><path d="M520 268l10-30 10 30z"/></g>
+            <path d="M0 400Q320 360 640 405V480H0z" fill="var(--road)"/>
+            <path d="M40 432Q320 398 600 434" stroke="#f5f5f5" stroke-width="4" stroke-dasharray="26 22" fill="none" opacity=".8"/>
+            <use href="#hatch" x="150" y="300" width="300" height="120" style="color:#c8202f"/>
+          </svg>
+        </div>
+        <!-- 2: salone -->
+        <div class="slide" aria-hidden="true">
+          <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Il salone con un SUV in esposizione">
+            <rect width="640" height="480" fill="var(--sky1)"/>
+            <rect x="40" y="70" width="560" height="320" fill="var(--paper)" stroke="var(--line)" stroke-width="2"/>
+            <rect x="40" y="70" width="560" height="44" fill="var(--navy)"/>
+            <text x="320" y="100" text-anchor="middle" fill="#fff" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="24" letter-spacing="2">FACCIN AUTO</text>
+            <g fill="var(--glass)" opacity=".85"><rect x="64" y="132" width="160" height="236"/><rect x="240" y="132" width="160" height="236"/><rect x="416" y="132" width="160" height="236"/></g>
+            <path d="M40 390h560v20H40z" fill="var(--line)"/>
+            <rect y="410" width="640" height="70" fill="var(--road)"/>
+            <use href="#suv" x="150" y="262" width="340" height="136" style="color:#e9ecef"/>
+          </svg>
+        </div>
+        <!-- 3: consegna -->
+        <div class="slide" aria-hidden="true">
+          <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Chiavi di un’auto nuova pronte per la consegna">
+            <rect width="640" height="480" fill="var(--navy)"/>
+            <use href="#cross" x="70" y="250" width="360" height="144" style="color:#3c6e9e"/>
+            <rect y="394" width="640" height="86" fill="#0b1420"/>
+            <g transform="translate(470 150) rotate(18)">
+              <rect x="-30" y="0" width="60" height="96" rx="22" fill="#e9ecef"/>
+              <circle cx="0" cy="30" r="9" fill="#13233a"/><circle cx="0" cy="58" r="9" fill="#13233a"/>
+              <rect x="-6" y="96" width="12" height="70" fill="#c9ced6"/>
+              <path d="M-6 120h-12v8h12zM-6 140h-16v8h16z" fill="#c9ced6"/>
+            </g>
+            <circle cx="470" cy="134" r="18" fill="none" stroke="#c9ced6" stroke-width="5"/>
+            <rect x="420" y="60" width="150" height="40" rx="3" fill="#c8202f"/>
+            <text x="495" y="87" text-anchor="middle" fill="#fff" font-family="Barlow, sans-serif" font-weight="600" font-size="19">Pronta da ritirare</text>
+          </svg>
+        </div>
+        <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+        <button class="pause" id="pause" type="button">Metti in pausa</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="servizi" aria-labelledby="h-servizi">
+    <div class="wrap">
+      <p class="kicker">Servizi</p>
+      <h2 id="h-servizi">Quello che possiamo fare per te</h2>
+      <ul class="services">
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M6 32v-7l5-2 6-8h15l7 8 3 1v8z"/><circle cx="14" cy="33" r="4"/><circle cx="35" cy="33" r="4"/><path d="M36 6l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z"/></svg>
+          <h3>Auto nuove Suzuki</h3>
+          <p>Tutta la gamma Suzuki, ibride, elettriche e a trazione integrale. Preventivi chiari e la prova su strada quando vuoi.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M6 32v-7l5-2 6-8h15l7 8 3 1v8z"/><circle cx="14" cy="33" r="4"/><circle cx="35" cy="33" r="4"/><path d="M30 7l4 4 8-8" stroke-linecap="round"/></svg>
+          <h3>Auto usate</h3>
+          <p>Usato controllato prima della vendita, con chilometri e storia del veicolo spiegati senza sorprese.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 16h26l-6-6M38 32H12l6 6"/></svg>
+          <h3>Valutazione e permuta</h3>
+          <p>Porta la tua auto: la valutiamo insieme e la ritiriamo in permuta sull’acquisto della nuova.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="36" height="24" rx="3"/><path d="M6 19h36M12 29h8"/></svg>
+          <h3>Finanziamenti e noleggio</h3>
+          <p>Rate su misura e formule di noleggio a lungo termine, per privati, partite IVA e aziende.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 5h17l8 8v30H12z"/><path d="M29 5v8h8M17 22h14M17 29h14M17 36h8"/></svg>
+          <h3>Pratiche auto</h3>
+          <p>Immatricolazioni, passaggi di proprietà e documenti: ce ne occupiamo noi, tu firmi e parti.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="21" cy="21" r="12"/><path d="M30 30l11 11"/></svg>
+          <h3>Auto su richiesta</h3>
+          <p>Cerchi un modello, un colore o un allestimento preciso? Dicci cosa ti serve e lo troviamo per te.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="s alt" id="modelli" aria-labelledby="h-modelli">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="kicker">Gamma Suzuki</p>
+          <h2 id="h-modelli">I modelli in salone</h2>
+        </div>
+        <a class="btn btn-line" href="#contatti">Prenota una prova</a>
+      </div>
+      <ul class="models">
+        <li class="model">
+          <div class="pic"><svg viewBox="0 0 300 120" aria-hidden="true"><use href="#hatch" style="color:#c8202f"/></svg></div>
+          <div class="body"><span class="cat">Compatta ibrida</span><h3>Swift</h3><p>Agile in città, parca nei consumi, facile da parcheggiare.</p></div>
+        </li>
+        <li class="model">
+          <div class="pic"><svg viewBox="0 0 300 120" aria-hidden="true"><use href="#suv" style="color:#2f6b4f"/></svg></div>
+          <div class="body"><span class="cat">SUV compatto</span><h3>Vitara</h3><p>Disponibile con trazione integrale ALLGRIP, per chi vive in collina.</p></div>
+        </li>
+        <li class="model">
+          <div class="pic"><svg viewBox="0 0 300 120" aria-hidden="true"><use href="#cross" style="color:#3c6e9e"/></svg></div>
+          <div class="body"><span class="cat">Crossover</span><h3>S-Cross</h3><p>Più spazio per famiglia e bagagli, anche a quattro ruote motrici.</p></div>
+        </li>
+        <li class="model">
+          <div class="pic"><svg viewBox="0 0 300 120" aria-hidden="true"><use href="#suv" style="color:#d9dde3"/></svg></div>
+          <div class="body"><span class="cat">SUV elettrico</span><h3>e VITARA</h3><p>Il primo SUV 100% elettrico di Suzuki, anche con trazione integrale.</p></div>
+        </li>
+      </ul>
+      <p class="note">Disponibilità, allestimenti e promozioni cambiano spesso: chiamaci per sapere cosa c’è in pronta consegna.</p>
+    </div>
+  </section>
+
+  <section class="s" id="chi-siamo" aria-labelledby="h-chi">
+    <div class="wrap about">
+      <div class="pic">
+        <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Il concessionario in via Monte Ortigara">
+          <rect width="600" height="480" fill="var(--sky1)"/>
+          <path d="M0 230 110 170 220 215 330 150 460 210 600 165V480H0z" fill="var(--hill1)"/>
+          <rect x="70" y="190" width="460" height="200" fill="var(--bg)" stroke="var(--line)" stroke-width="2"/>
+          <rect x="70" y="190" width="460" height="40" fill="var(--navy)"/>
+          <text x="300" y="218" text-anchor="middle" fill="#fff" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="22" letter-spacing="2">FACCIN AUTO</text>
+          <g fill="var(--glass)"><rect x="92" y="248" width="120" height="142"/><rect x="232" y="248" width="120" height="142"/><rect x="372" y="248" width="136" height="92"/></g>
+          <rect y="390" width="600" height="90" fill="var(--road)"/>
+          <use href="#hatch" x="24" y="330" width="230" height="92" style="color:#c8202f"/>
+          <use href="#suv" x="330" y="322" width="250" height="100" style="color:#2f6b4f"/>
+        </svg>
+      </div>
+      <div>
+        <p class="kicker">Faccin Auto</p>
+        <h2 id="h-chi">Chi siamo</h2>
+        <p>Faccin Auto è un’attività di famiglia. Dal 1988 Massimo Faccin vende auto a Cornedo Vicentino, in via Monte Ortigara, e oggi è un punto vendita Suzuki per tutta la Valle dell’Agno.</p>
+        <p>Qui non trovi un salone anonimo: trovi una persona che ti segue dalla prima prova su strada fino alla consegna delle chiavi, e che sai sempre dove trovare.</p>
+        <dl class="facts">
+          <div><dt>1988</dt><dd>anno di apertura</dd></div>
+          <div><dt>Suzuki</dt><dd>gamma nuova completa</dd></div>
+          <div><dt>Bronzo</dt><dd>Aquile in automobili 2019</dd></div>
+        </dl>
+        <div class="person">
+          <div class="avatar" aria-hidden="true">MF</div>
+          <div><b>Massimo Faccin</b><span>titolare</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="h-cta">
+    <div class="wrap">
+      <h2 id="h-cta">Hai in mente un’auto? Chiamaci per un appuntamento.</h2>
+      <div class="ctas">
+        <a class="btn btn-red" href="tel:+393405759574"><svg><use href="#phone"/></svg>Chiama</a>
+        <a class="btn btn-line" href="mailto:wes.faccin@gmail.com"><svg><use href="#mail"/></svg>Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contatti">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="#top" aria-label="Faccin Auto, torna all’inizio"><b>FACCIN<span>·</span>AUTO</b><small>di Massimo Faccin</small></a>
+        <p style="margin-top:16px;max-width:34ch">Concessionario Suzuki a Cornedo Vicentino dal 1988.</p>
+      </div>
+      <div>
+        <h3>Dove siamo</h3>
+        <p>Via Monte Ortigara, 72<br>36073 Cornedo Vicentino (VI)</p>
+        <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=Faccin+Auto+Via+Monte+Ortigara+72+Cornedo+Vicentino" target="_blank" rel="noopener">Indicazioni stradali</a></p>
+      </div>
+      <div>
+        <h3>Contatti</h3>
+        <ul>
+          <li>Tel. <a href="tel:+393405759574">340 575 9574</a></li>
+          <li><a href="mailto:wes.faccin@gmail.com">wes.faccin@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Orari</h3>
+        <p>Su appuntamento: chiama prima di passare.</p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Faccin Auto di Massimo Faccin · Tutti i diritti riservati</span>
+      <span>P.IVA 02009400249</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll(".slide")], dots=[...document.querySelectorAll(".dots i")], btn=document.getElementById("pause");
+  const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let i=0, playing=!reduce, t=null;
+  function show(n){
+    slides[i].classList.remove("on"); slides[i].setAttribute("aria-hidden","true"); dots[i].classList.remove("on");
+    i=n; slides[i].classList.add("on"); slides[i].setAttribute("aria-hidden","false"); dots[i].classList.add("on");
+  }
+  function start(){ stop(); t=setInterval(()=>show((i+1)%slides.length),5500); }
+  function stop(){ if(t) clearInterval(t); t=null; }
+  function label(){ btn.textContent = playing ? "Metti in pausa" : "Riprendi"; }
+  btn.addEventListener("click",()=>{ playing=!playing; playing?start():stop(); label(); });
+  if(playing) start(); label();
+
+  const mb=document.getElementById("menuBtn"), nav=document.getElementById("nav");
+  mb.addEventListener("click",()=>{ const o=nav.classList.toggle("open"); mb.setAttribute("aria-expanded",o); });
+  nav.addEventListener("click",e=>{ if(e.target.closest("a")){ nav.classList.remove("open"); mb.setAttribute("aria-expanded","false"); }});
+})();
+</script>
+</body>
+</html>
