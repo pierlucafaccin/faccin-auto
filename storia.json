@@ -1,0 +1,39 @@
+{
+  "tappe": [
+    {
+      "era": "Gli inizi",
+      "titolo": "San Quirico, Valdagno",
+      "luogo": "San Quirico",
+      "indirizzo": "Via Fabio Filzi, 7, 36078 Valdagno VI",
+      "testo": "Tutto comincia con Renato Faccin, nel piazzale di San Quirico a Valdagno. È qui che nasce l’attività di famiglia.",
+      "foto": []
+    },
+    {
+      "era": "1988",
+      "titolo": "Il trasferimento a Cornedo",
+      "luogo": "Spagnago",
+      "indirizzo": "Via Monte Ortigara, 75, 36073 Spagnago di Cornedo Vicentino VI",
+      "testo": "Nel 1988 l’attività si sposta a Cornedo Vicentino, in via Monte Ortigara 75, nella frazione di Spagnago.",
+      "foto": []
+    },
+    {
+      "era": "Oggi",
+      "titolo": "Via Monte Ortigara 72",
+      "luogo": "Cornedo Vicentino",
+      "indirizzo": "Via Monte Ortigara, 72, 36073 Cornedo Vicentino VI",
+      "testo": "La sede di oggi, a pochi passi dalla precedente: salone, piazzale e il Suzuki Point di riferimento per la valle, con Massimo Faccin.",
+      "foto": [
+        {
+          "src": "img/storia/oggi-1.webp",
+          "big": "img/sede-1360.webp",
+          "alt": "La sede di via Monte Ortigara 72"
+        },
+        {
+          "src": "img/storia/oggi-2.webp",
+          "alt": "Le vetrine del salone la sera"
+        }
+      ]
+    }
+  ],
+  "_istruzioni": "Ogni tappa: era, titolo, luogo, indirizzo, testo, foto (lista di {src, alt}). Metti le foto d’epoca in img/storia/. Senza foto la tappa mostra una cornice d’epoca con era e luogo."
+}
