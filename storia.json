@@ -5,35 +5,52 @@
       "titolo": "San Quirico, Valdagno",
       "luogo": "San Quirico",
       "indirizzo": "Via Fabio Filzi, 7, 36078 Valdagno VI",
-      "testo": "Tutto comincia con Renato Faccin, nel piazzale di San Quirico a Valdagno. È qui che nasce l’attività di famiglia.",
-      "foto": []
+      "testo": "Tutto comincia con Renato Faccin, nel piazzale di San Quirico a Valdagno. È qui che nasce l’attività di famiglia, tra auto, fuoristrada e moto.",
+      "foto": [
+        {
+          "src": "img/storia/san-quirico-1.png",
+          "alt": "Il piazzale di Faccin Auto negli anni di San Quirico"
+        },
+        {
+          "src": "img/storia/san-quirico-2.png",
+          "alt": "Renato Faccin e gli anni di San Quirico"
+        }
+      ]
     },
     {
       "era": "1988",
       "titolo": "Il trasferimento a Cornedo",
       "luogo": "Spagnago",
       "indirizzo": "Via Monte Ortigara, 75, 36073 Spagnago di Cornedo Vicentino VI",
-      "testo": "Nel 1988 l’attività si sposta a Cornedo Vicentino, in via Monte Ortigara 75, nella frazione di Spagnago.",
-      "foto": []
+      "testo": "Nel 1988 l’attività si trasferisce a Cornedo Vicentino, nella frazione di Spagnago. Una nuova sede e nuovi spazi accompagnano la crescita di Faccin Auto.",
+      "foto": [
+        {
+          "src": "img/storia/cornedo-1988-1.png",
+          "alt": "La sede di Faccin Auto a Cornedo Vicentino in inverno"
+        },
+        {
+          "src": "img/storia/cornedo-1988-2.png",
+          "alt": "La sede di Faccin Auto dopo il trasferimento a Cornedo Vicentino"
+        }
+      ]
     },
     {
       "era": "Oggi",
       "titolo": "Via Monte Ortigara 72",
       "luogo": "Cornedo Vicentino",
       "indirizzo": "Via Monte Ortigara, 72, 36073 Cornedo Vicentino VI",
-      "testo": "La sede di oggi, a pochi passi dalla precedente: salone, piazzale e il Suzuki Point di riferimento per la valle, con Massimo Faccin.",
+      "testo": "La storia continua oggi a pochi passi dalla sede precedente. Con Massimo Faccin, Faccin Auto porta avanti la stessa attività di famiglia come Suzuki Point di riferimento per la Valle dell’Agno.",
       "foto": [
         {
           "src": "img/storia/oggi-1.webp",
           "big": "img/sede-1360.webp",
-          "alt": "La sede di via Monte Ortigara 72"
+          "alt": "La sede attuale di Faccin Auto in via Monte Ortigara 72"
         },
         {
           "src": "img/storia/oggi-2.webp",
-          "alt": "Le vetrine del salone la sera"
+          "alt": "Le vetrine del salone Faccin Auto"
         }
       ]
     }
-  ],
-  "_istruzioni": "Ogni tappa: era, titolo, luogo, indirizzo, testo, foto (lista di {src, alt}). Metti le foto d’epoca in img/storia/. Senza foto la tappa mostra una cornice d’epoca con era e luogo."
+  ]
 }
