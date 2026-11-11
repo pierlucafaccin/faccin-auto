@@ -180,11 +180,13 @@ dialog.lb[open]{animation:pop .3s ease}
 @keyframes pop{from{opacity:0;transform:scale(.96)}}
 .lb-inner{position:relative}
 .lb img{width:100%;max-height:82vh;object-fit:contain;border-radius:var(--r-lg)}
-.lb .round{position:absolute;top:50%;transform:translateY(-50%)}
+.lb .round{position:absolute;top:calc(50% - 23px)}
 .lb .prev{left:12px}.lb .next{right:12px}
 .lb .close{position:absolute;top:12px;right:12px;transform:none}
 .lb .round{background:rgba(255,255,255,.92);color:#13233a;border:0;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .lb p{color:#fff;text-align:center;margin:12px 0 0}
+.lb,.cd-gal{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.lb img,.cd-gal img{-webkit-user-drag:none}
 
 /* models */
 .models{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
@@ -234,7 +236,7 @@ dialog.cd[open]{animation:pop .3s ease}
 .cd-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
 .cd-gal{position:relative;background:#0b1420}
 .cd-main{aspect-ratio:4/3;width:100%;object-fit:cover;display:block}
-.cd-gal .round{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);color:#13233a;border:0}
+.cd-gal .round{position:absolute;top:calc(50% - 23px);background:rgba(255,255,255,.92);color:#13233a;border:0}
 .cd-gal .prev{left:12px}.cd-gal .next{right:12px}
 .cd-thumbs{display:flex;gap:6px;padding:8px;overflow-x:auto;background:#0b1420}
 .cd-thumbs button{flex:none;width:76px;aspect-ratio:4/3;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;cursor:pointer;background:none;opacity:.7}
