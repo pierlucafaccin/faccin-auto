@@ -1039,7 +1039,7 @@ let openLb = () => {};
   const lb = $("#lb"), lbImg = $("#lbImg"), lbCap = $("#lbCap");
   let li = 0;
   let LBSET = FOTO;
-  const showLb = i => { li = (i + LBSET.length) % LBSET.length; lbImg.src = LBSET[li].big || LBSET[li].src; lbImg.alt = LBSET[li].alt; lbCap.textContent = LBSET[li].alt; const one = LBSET.length < 2; $("#lbPrev").hidden = one; $("#lbNext").hidden = one; };
+  const showLb = i => { li = (i + LBSET.length) % LBSET.length; lbImg.src = LBSET[li].big || LBSET[li].src; lbImg.alt = LBSET[li].alt; lbCap.textContent = LBSET.length > 1 ? `${LBSET[li].alt} · ${li+1} di ${LBSET.length}` : LBSET[li].alt; [li+1, li-1].forEach(k => { const f = LBSET[(k + LBSET.length) % LBSET.length]; if (f) (new Image()).src = f.big || f.src; }); const one = LBSET.length < 2; $("#lbPrev").hidden = one; $("#lbNext").hidden = one; };
   openLb = (set, i) => { if (!set.length) return; LBSET = set; showLb(i); lb.showModal(); };
   track.addEventListener("click", e => { const b = e.target.closest(".ph"); if (!b) return; if (moved > 6) { e.preventDefault(); return; } openLb(FOTO, +b.dataset.i); });
   $("#lbPrev").onclick = () => showLb(li-1);
